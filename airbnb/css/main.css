@@ -7,3 +7,25 @@ background grey: #efefef
 title grey: #edefed
 footer grey: #2B2D2E
 */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+
+.signup {
+    color: rgb(0, 0, 0);
+    
+}
+
+.navbar-right {
+    display: flex;
+    flex-direction: row;
+}
+
+.main-section {
+    background-image: url("../images/melbourne.jpg");
+    background-size: contain;
+}
