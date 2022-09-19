@@ -14,7 +14,9 @@ footer grey: #2B2D2E
   font-family: 'Nunito', sans-serif;
 }
   
- 
+ body {
+    background-color: #efefef;
+ }
 
 header {
     display: flex;
@@ -92,4 +94,42 @@ button {
     align-items: center;
     flex-direction: column;
     color: blue;
+}
+.polaroid {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 310px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.middle-box {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 80%;
+    background-color: white;
+    background-size: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.middle-title {
+    height: 40px;
+    background-color: #edefed;
+
+}
+
+.main-text {
+    height: 28px;
+    width: 412px;
+    font-weight: bold;
+    color: azure;
+}
+.main-title {
+    font-size: 50px;
+    height: 8px;
+    width: 250px;
+    color: rgb(255, 255, 255);
+    
+    
+    ;
 }
