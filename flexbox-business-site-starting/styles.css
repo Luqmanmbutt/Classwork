@@ -1,8 +1,106 @@
 
-.top-header {
+body {
     margin: 0;
+    font-family: "Lexend Mega", sans-serif;
+    color: black;
+    background-color: white;
+    font-size: 22px;
+    text-align: center;
+  }
+  
+.top-header {
     font-family:"Lexend Mega", sans-serif;
     color: black;
     font-size: 22px;
+    display: flex;
+    flex-direction: column;
+
 }
-    
+.navigation p {
+    display: inline-block;
+    padding: 10px 10px;
+}
+.navigation {
+    display: flex;
+    justify-content: space-around;
+    text-decoration-line:underline; 
+}
+
+h1 {
+    display: block;
+    font-size: 2em;
+    font-weight: bold;
+}
+h2 {
+    display: block;
+    font-size: 2em;
+    font-weight: bold;
+    width: 1495px;
+    height: 115px;
+    color: rgb(0, 0, 0);
+}
+h4 {
+    color: rgb(0, 0, 0);
+    display: block;
+    margin-block-start: 1.33em;
+    margin-block-end: 1.33em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+   
+}
+h3,
+h2,
+h4,
+
+p {
+    margin: 0px;
+    padding: 10px;
+}
+.mainbox {
+    padding-top: 35px;
+    opacity: 1;
+}
+.maincontent {
+    display: flex;
+    height: 300px;
+    background-image: url("https://content.codecademy.com/PRO/independent-practice-projects/flexbox-business-site/img/skyscrapers.jpg");
+    padding-top: 35px;
+}
+content {
+    margin: auto;
+    background-color: white;
+    width: 100%;
+    display: block;
+}
+.portfolio {
+    min-height: 500px;
+    margin: auto;
+    padding-top: 70px;
+  }
+.thumbnail {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 45px;
+}
+.logo img {
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    padding: 10px;
+    height: auto;
+}
+.logo span {
+    padding: 5px;
+    min-width: 240px;
+    font-weight: bold;
+    text-align: center;
+    width: 10px;
+}
