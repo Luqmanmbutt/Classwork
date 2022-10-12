@@ -3,3 +3,23 @@
 // ! 👨‍🏫 Read the readme carefully, and practice using "window.prompt()" to gather user input
 
 // * Write your code below!
+function init() {
+
+    var firstValue = prompt("What is your first value?");
+
+    if (answer == 10) {
+      alert("Wow! Correct!");
+    } else {
+      alert("Wrong!")
+    }
+
+
+
+
+
+
+
+
+}
+
+window.addEventListener('DOMContentLoaded', init)
