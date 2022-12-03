@@ -2,23 +2,28 @@
 
 // ? write a function that returns "Hello World!" if no argument is given, or "Hello <argument>!" otherwise
 // ? eg: hello() => "Hello World!"; hello("Mike") => "Hello Mike!"
-function hello(string ) {
-// string being the arguement
+function hello(name){
+  if (!name) { 
+    return 'Hello World!' 
+} else {
+   return `Hello ${name}!`
 }
-
+}
+// return function()
 // ? write a function that will calculate the area of a circle, given the radius
 function areaOfCircle(radius) {
-
+  return (radius * radius * Math.PI)
 }
-
 // ? write a function to convert celcius to farenheit
 function celciusToFarenheit(celcius) {
-
+  const fahrenheit = celcius * 9 / 5 + 32;
+    return fahrenheit;
 }
-
 // ? write a function that will reverse a number (eg. 456733 become 337654)
 function numberReverse(number) {
-
+  return (
+    parseFloat(number.toString().split('').reverse().join('')) * Math.sign(number)
+  )                 
 }
 
 // ? write a function to check if a word or phrase is a palindrome returning a boolean

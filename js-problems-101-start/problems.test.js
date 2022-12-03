@@ -2,7 +2,7 @@
 
 const fns = require('./problems')
 
-describe('hello', () => {
+xdescribe('hello', () => {
   test('should return "Hello World!" if no argument is passed', () => {
     expect(fns.hello()).toEqual('Hello World!')
   })
@@ -37,7 +37,7 @@ xdescribe('numberReverse', () => {
   })
 })
 
-xdescribe('palindromeCheck', () => {
+describe('palindromeCheck', () => {
   test('should check if a word is a palindrome', () => {
     expect(fns.palindromeCheck('pop')).toBe(true)
     expect(fns.palindromeCheck('dog')).toBe(false)
