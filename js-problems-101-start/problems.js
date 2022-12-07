@@ -16,40 +16,43 @@ function areaOfCircle(radius) {
 }
 // ? write a function to convert celcius to farenheit
 function celciusToFarenheit(celcius) {
-  const fahrenheit = celcius * 9 / 5 + 32;
-    return fahrenheit;
+  return celcius * 9 / 5 + 32;
+  
 }
 // ? write a function that will reverse a number (eg. 456733 become 337654)
 function numberReverse(number) {
-  return (
-    parseFloat(number.toString().split('').reverse().join('')) * Math.sign(number)
-  )                 
+  const numbers = parseFloat(number.toString().split('').reverse().join(''))
+  return numbers
 }
-
 // ? write a function to check if a word or phrase is a palindrome returning a boolean
 // ? eg. palindromeCheck('dad') => true, palindrome('nonsense') => false
 function palindromeCheck(string) {
-  return string == string.split('').reverse().join(''); 
+  const reverseWord = string.split("").reverse().join("")
+  const reversePhrase = string.split(" ").reverse().join(" ")
+  
+  if (reverseWord) return string == reverseWord
+  else return string == reversePhrase
+
 }
 
 
 // ? write a function that returns the letters of a word or phrase in alphabetical order case insensitive
 // ? eg. orderStringAlphabetically('javascript is cool') => 'aacciijlooprsstv'
 function orderStringAlphabetically(string) {
-
-}
-
+  var arr = string.split(''),
+  alpha = arr.sort().join('').replace(/\s+/g, '');
+  return alpha; 
+  }
 // ? write a function that capitalizes the first letter of each word
 // ? eg. titleCase('the lord of the rings') => 'The Lord Of The Rings'
 function titleCase(string) {
-  const splitStr = string.toLowerCase().split(' ');
-  for (const i = 0; i < splitStr.length; i++) {
-      // You do not need to check if i is larger than splitStr length, as your for does that for you
-      // Assign it back to the array
-      splitStr[i] = splitStr[i].charAt(0).toUpperCase() + splitStr[i].substring(1);     
+  string = string.split(" ");
+
+  for (let i = 0, x = string.length; i < x; i++) {
+    string[i] = string[i][0].toUpperCase() + string[i].substr(1);
   }
-  // Directly return the joined string
-  return splitStr.join(' '); 
+
+  return string.join(" ");
 }
 
 

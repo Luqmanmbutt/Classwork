@@ -37,7 +37,7 @@ xdescribe('numberReverse', () => {
   })
 })
 
-xdescribe('palindromeCheck', () => {
+describe('palindromeCheck', () => {
   test('should check if a word is a palindrome', () => {
     expect(fns.palindromeCheck('pop')).toBe(true)
     expect(fns.palindromeCheck('dog')).toBe(false)
@@ -66,7 +66,7 @@ xdescribe('titleCase', () => {
   })
 })
 
-describe('frame', () => {
+xdescribe('frame', () => {
   test('should frame a string in asterisks', () => {
     expect(fns.frame('Rumplestiltskin')).toEqual('*******************\n* Rumplestiltskin *\n*******************')
     expect(fns.frame('Hello Kitty')).toEqual('***************\n* Hello Kitty *\n***************')
