@@ -1,0 +1,79 @@
+
+
+body {
+    height: 700px;
+    width: 98%;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    height: 70%;
+    width: 85%;
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    
+    
+    
+}
+
+.top-box, .middle-box, .bottom-box {
+    height: 30%;
+    width: 95%;
+    border: 1px solid black;
+    
+    
+}
+.bottom-box {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+}
+
+.donate-button {
+    height: 50%;
+    width: 25%;
+    border: 1px solid black;
+    
+
+}
+
+.middle-box {
+    display: flex;
+    justify-content: space-around;
+    flex-direction:row-reverse;
+    align-items: center;
+}
+.target-box {
+    height: 30%;
+    width: 20%;
+    border: 1px solid black;
+}
+.donation-box {
+    height: 80%;
+    width: 70%;
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+.donation-target {
+    height: 30%;
+    width: 75%;
+    border: 1px solid black;
+}
+
+.donation-bar {
+    height: 30%;
+    width: 75%;
+    border: 1px solid black;
+}
