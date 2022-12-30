@@ -7,37 +7,39 @@ const fivePoundButton = document.querySelector(".five-pound-button")
 const tenPoundButton = document.querySelector(".ten-pound-button")
 const donationBar = document.querySelector(".donation-target")
 const loadingBar = document.querySelector(".loading-bar")
+const targetRemainder = document.querySelector(".target-text")
 
-console.log("loadingBar", loadingBar)
 
-donationBar.style.backgroundColor = "black"
+donationBar.style.backgroundColor = ""
 loadingBar.style.width = "0%"
 
+let targetLeft= 100
 let targetBar = 0 
 
 
 const onePoundBtn = () => {
   targetBar += 1
+  targetLeft -= 1
+  targetRemainder.textContent = "YOU NEED " + "£" + targetLeft + " TO REACH TARGET" 
   loadingBar.style.width = targetBar + "%"
   targetReached()
-  console.log("target button", targetBar)
       
 }
 
 const fivePoundBtn = () => {
   targetBar += 5
+  targetLeft -= 5
+  targetRemainder.textContent = "YOU NEED " + "£" + targetLeft + " TO REACH TARGET"
   loadingBar.style.width = targetBar + "%"
   targetReached()
-  console.log("target button", targetBar)
-
 }
 
 const tenPoundBtn = () => {
   targetBar += 10
+  targetLeft -= 10
+  targetRemainder.textContent = "YOU NEED " + "£" + targetLeft + " TO REACH TARGET"
   loadingBar.style.width = targetBar + "%"
   targetReached()
-  console.log("target button", targetBar)
-
 }
 
 const targetReached = () => {
@@ -48,22 +50,13 @@ const targetReached = () => {
     fivePoundButton.style.backgroundColor = "grey"
     tenPoundButton.style.backgroundColor = "grey"
     onePoundButton.style.backgroundColor = "grey"
+    targetRemainder.textContent = "THANK YOU!"
   } 
 
   
 }
 
-
-
-// document.getElementById("myBtn").disabled = true;
-
-
-
-
-
-
-
-
+/* Event listeners */
 onePoundButton.addEventListener("click", onePoundBtn)
 fivePoundButton.addEventListener("click", fivePoundBtn)
 tenPoundButton.addEventListener("click", tenPoundBtn)
