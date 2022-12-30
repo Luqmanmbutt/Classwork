@@ -7,7 +7,6 @@ const fivePoundButton = document.querySelector(".five-pound-button")
 const tenPoundButton = document.querySelector(".ten-pound-button")
 const donationBar = document.querySelector(".donation-target")
 const loadingBar = document.querySelector(".loading-bar")
-const 
 
 console.log("loadingBar", loadingBar)
 
@@ -46,7 +45,9 @@ const targetReached = () => {
     onePoundButton.disabled = true;
     fivePoundButton.disabled = true;
     tenPoundButton.disabled = true;
-    onePoundButton.style.color = "grey"
+    fivePoundButton.style.backgroundColor = "grey"
+    tenPoundButton.style.backgroundColor = "grey"
+    onePoundButton.style.backgroundColor = "grey"
   } 
 
   
