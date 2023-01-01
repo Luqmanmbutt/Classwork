@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Seymour+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Seymour+One&display=swap');
 
 body {
     height: 700px;
     width: 98%;
-    /* border: 1px solid black; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -13,7 +13,6 @@ body {
 section {
     height: 70%;
     width: 85%;
-    /* border: 1px solid black; */
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
@@ -23,7 +22,6 @@ section {
 .top-box, .middle-box, .bottom-box {
     height: 30%;
     width: 95%;
-    /* border: 1px solid black; */
     display: flex;
     justify-content: center;
     align-items: center;  
@@ -49,6 +47,7 @@ section {
 .target-box {
     height: 30%;
     width: 20%;
+    
     /* border: 1px solid black; */
 }
 .donation-box {
@@ -66,17 +65,18 @@ section {
     width: 75%;
 
 }
-
+.target {
+  font-family: 'Seymour One', sans-serif;
+}
 .donation-bar {
     height: 30%;
     width: 75%;
-    /* border: 1px solid black; */
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .title {
-    width: 95%;
+    width: 75%;
     font-family: 'Seymour One', sans-serif;
     font-size: 270%;
     color:rgb(0, 105, 143)
@@ -164,4 +164,5 @@ section {
   height: 60%;
   width: 90%;
   font-size: larger;
+  font-family: 'Seymour One', sans-serif;
 }

@@ -1,6 +1,7 @@
 // Remember to console log and check if your JS is connected properly
 
 function init() {
+/* Queryselector */
   
 const onePoundButton = document.querySelector(".one-pound-button")
 const fivePoundButton = document.querySelector(".five-pound-button")
@@ -13,9 +14,12 @@ const targetRemainder = document.querySelector(".target-text")
 donationBar.style.backgroundColor = ""
 loadingBar.style.width = "0%"
 
+/* Variables */
+
 let targetLeft= 100
 let targetBar = 0 
 
+/* Functions  */
 
 const onePoundBtn = () => {
   targetBar += 1
