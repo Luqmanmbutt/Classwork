@@ -1,0 +1,203 @@
+/* .App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
+body {
+  height: 700px;
+  width: 98%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: khaki ;
+}
+
+section {
+  height: 70%;
+  width: 85%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+}
+
+.top-box, .middle-box, .bottom-box {
+  height: 30%;
+  width: 95%;
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+}
+.bottom-box {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+}
+
+.donate-button {
+  height: 50%;
+  width: 25%;
+}
+
+.middle-box {
+  display: flex;
+  justify-content: space-around;
+  flex-direction:row-reverse;
+  align-items: center;
+}
+.target-box {
+  height: 30%;
+  width: 20%;
+  
+  /* border: 1px solid black; */
+}
+.donation-box {
+  height: 80%;
+  width: 70%;
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+
+}
+.donation-target {
+  height: 30%;
+  width: 75%;
+
+}
+.target {
+font-family: 'Seymour One', sans-serif;
+}
+.donation-bar {
+  height: 30%;
+  width: 75%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.title {
+  width: 75%;
+  font-family: 'Seymour One', sans-serif;
+  font-size: 270%;
+  color:rgb(0, 105, 143)
+}
+
+.one-pound-button {
+  width: 100%;
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.one-pound-button:hover {background-color: #3e8e41}
+
+.one-pound-button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.five-pound-button {
+  width: 100%;
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #d70000;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.five-pound-button:hover {background-color: #950000}
+
+.five-pound-button:active {
+  background-color: #6e0000;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.ten-pound-button {
+  width: 100%;
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #80009a;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+
+.ten-pound-button:hover {background-color: #570089}
+
+.ten-pound-button:active {
+  background-color: #790079;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.loading-bar {
+  height: 93%;
+  background-color: #d70000;
+}
+
+.target-text {
+height: 60%;
+width: 90%;
+font-size: larger;
+font-family: 'Seymour One', sans-serif;
+}
