@@ -36,3 +36,16 @@
     transform: rotate(360deg);
   }
 }
+.navbar-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  
+}
+.nav-bar {
+  color: red;
+  width: 50%;
+  
+  
+  
+}
